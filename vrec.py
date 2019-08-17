@@ -9,7 +9,7 @@ def listen(recog: sr.Recognizer):
     return audio
 
 
-if __name__ == '__main__':
+def main():
     recog = sr.Recognizer()
     audio = listen(recog)
     try:
@@ -17,3 +17,6 @@ if __name__ == '__main__':
     except Exception as e:
         print(e)
 
+
+if __name__ == '__main__':
+    main()
